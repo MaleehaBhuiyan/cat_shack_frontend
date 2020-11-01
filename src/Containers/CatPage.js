@@ -5,7 +5,8 @@ import CatSearch from '../Components/CatSearch.js'
 
 class CatContainer extends React.Component{
     state = {
-        allCats: []
+        allCats: [],
+        searchValue: " "
     }
 
     fetchCats = () =>{
@@ -18,11 +19,19 @@ class CatContainer extends React.Component{
         this.fetchCats()
     }
 
+    changeHandler = (e) => {
+        this.setState({ searchValue: e.target.value })
+    }
+    
+
     render(){
+
         let cats = this.state.allCats.map(cat => {return <Cats key={cat.id} name={cat.name} img={cat.img} />})
+
+
         return(
             <>
-            <div className="container">
+            <div id="mainCatsDiv">
                 {cats}
             </div>
             <CatFilter />
