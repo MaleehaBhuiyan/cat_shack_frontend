@@ -1,23 +1,75 @@
 
-
+body {
+  margin: 0;
+}
 
 /* WORK ON CARD STYLING LATER*/
-#mainCatsDiv{
-  position: relative;
+.grid-container {
+  position: absolute;
   top: 200px;
-  left: 300px;
-  width: 1000px;
-  column-count: 4;
+  left: 400px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 2em;
+  width: 900px;
 }
 
-.catCard{
-  width: 70%;
-  height: 75%;
+.grid-item {
+  font-size: 30px;
   text-align: center;
+  border: 5px solid powderblue;
+  border-radius: 20px ;
+  background-color: powderblue;
+  padding-top: 20px;
+  width: 225px;
+
 }
+
+.catCardImg {
+  padding-bottom: 10px;
+}
+
+.catCardh4{
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffe4e1;
+}
+
 
 #catSearch{
   position: absolute;
-  top: 150px;
-  left: 650px;
+  top: 100px;
+  left: 720px;
+  border: 5px solid powderblue;
+  padding:2px ;
 }
+
+.gg-search {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  box-sizing: border-box;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+  margin-left: -4px;
+  margin-top: -4px
+}
+.gg-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px
+}
+
+input[type="text"] { border: none }

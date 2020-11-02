@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import CatPage from './Containers/CatPage'
+import CatPage from './Page/CatPage'
 import Navbar from './Components/Navbar'
 
 class App extends React.Component{

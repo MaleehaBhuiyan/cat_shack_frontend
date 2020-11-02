@@ -5,7 +5,7 @@ class CatSearch extends React.Component{
         return(
             <>
             <form id="catSearch">
-                <input placeholder="Search" value={this.props.searchValue} onChange={this.props.changeHandler} />
+                <input placeholder="Search" type="text" value={this.props.searchValue} onChange={this.props.changeHandler} />
             </form>
             </>
         )
