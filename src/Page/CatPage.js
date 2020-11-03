@@ -1,6 +1,6 @@
 import React from 'react'
 import CatsContainer from '../Containers/CatsContainer.js'
-import CatFilter from '../Components/CatFilter.js'
+import CatFilterContainer from '../Containers/CatFilterContainer.js'
 import CatSearch from '../Components/CatSearch.js'
 
 class CatPage extends React.Component{
@@ -31,7 +31,7 @@ class CatPage extends React.Component{
         return(
             <>
             <CatsContainer allCats={this.filteredCats()}/>
-            <CatFilter />
+            <CatFilterContainer />
             <CatSearch searchValue={this.state.searchValue} changeHandler={this.changeHandler} />
             </>
         )

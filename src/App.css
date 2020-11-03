@@ -30,7 +30,7 @@ body {
 }
 
 .catCardh4{
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffe4e1;
 }
@@ -73,3 +73,51 @@ body {
 }
 
 input[type="text"] { border: none }
+
+
+#catFilterDiv{
+  position: absolute;
+  top: 200px;
+  left: 45px;
+  width: 300px;
+  height: 700px;
+}
+
+.filterButton{
+  width: 300px;
+  border: 1px solid powderblue;
+  background-color: powderblue;
+  height: 50px;
+  font-size: 20px;
+  border-bottom: 1px solid #ffe4e1  ;
+  
+}
+
+.filterOption{
+  text-align: left;
+  width: 300px;
+  border: 1px solid powderblue;
+  background-color: #ffe4e1;
+}
+
+.checkboxes label
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: 300px;
+    border: 1px solid powderblue;
+    background-color: #ffe4e1;
+}
+
+.checkboxes input
+{
+    vertical-align: middle;
+}
+
+.checkboxes label span
+{
+    vertical-align: middle;
+}
+
+
