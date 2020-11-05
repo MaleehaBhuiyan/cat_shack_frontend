@@ -6,7 +6,7 @@ import CatSearch from '../Components/CatSearch.js'
 class CatPage extends React.Component{
     state = {
         allCats: [],
-        searchValue: " "
+        searchValue: " ",
     }
 
     fetchCats = () =>{
@@ -26,12 +26,11 @@ class CatPage extends React.Component{
     filteredCats = () => {
         return this.state.allCats.filter(cat => cat.about.toLowerCase().includes(this.state.searchValue.toLowerCase()))
     }
-
     render(){
         return(
             <>
             <CatsContainer allCats={this.filteredCats()}/>
-            <CatFilterContainer />
+            <CatFilterContainer allCats={this.filteredCats()} />
             <CatSearch searchValue={this.state.searchValue} changeHandler={this.changeHandler} />
             </>
         )
